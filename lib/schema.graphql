@@ -90,9 +90,9 @@ type Mutation {
   "Edita una persona"
   editPerson(_id: ID!, input: PersonEditInput): Person
   "Agrega una persona a un curso"
-  addPeople(courseID: ID!, personID: ID!): Course
+  addPersonToACourse(courseID: ID!, personID: ID!): Course
   "Elimina un curso"
   deleteCourse(_id: ID!): Boolean
   "Elimina un estudiante"
-  deleteStudent(_id: ID!): Boolean
+  deletePerson(_id: ID!): Boolean
 }
